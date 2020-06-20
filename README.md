@@ -10,20 +10,50 @@
 npm install --save simple-login-form
 ```
 
+![simple-login-form](/src/assets/screenshot1.png)
+
 ## Usage
+
+First you need to import the component and the stylesheet.
 
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'simple-login-form'
+import SimpleLoginForm from 'simple-login-form'
 import 'simple-login-form/dist/index.css'
+```
 
-class Example extends Component {
+Then declare the `<SimpleLoginForm />` tag where you see fit.
+
+```jsx
+export default class App extends Component {
+  // Copy and paste this into your project. Height is advised to be left as is. everything else can be manipulated to your likings.
+  formStyle = {
+    maxWidth: '350px',
+    maxHeight: '525px',
+    background: 'linear-gradient(#e66465, #9198e5)',
+    borderRadius: '2%'
+  }
+
+  // function used to control submit event on form.
+  sendUserInfoToDatabase = (userInfo, event) => {}
+
   render() {
-    return <MyComponent />
+    // The prop names must be identical to whats shown below or the component would not render.
+    return (
+      <React.Fragment>
+        <SimpleLoginForm
+          getUserInfo={this.sendUserInfoToDatabase}
+          style={this.formStyle}
+          photoIcon={picture}
+        />
+      </React.Fragment>
+    )
   }
 }
 ```
+
+The forget password anchor links endpoint is 'forgot-password'. Use that endpoint to load whatever component or page you need to control what happens when a user clicks 'forgot password?'
 
 ## License
 
