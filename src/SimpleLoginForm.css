@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100;300;400;500;600;700;800;900&display=swap');
+
+::placeholder {
+  color: rgb(243, 242, 242);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.profilephoto {
+  padding-top: 15px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formheading {
+}
+
+.formheading h1 {
+  color: rgb(243, 242, 242);
+  text-align: center;
+  font-family: 'Big Shoulders Text', cursive;
+}
+.profilephoto img {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+}
+
+.formcontainer form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.formcontainer form input[type='text'],
+.formcontainer form input[type='password'] {
+  background-color: transparent;
+  width: 250px;
+  height: 30px;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  color: rgb(243, 242, 242);
+}
+
+.inputsection {
+  border-bottom: 2px solid rgb(243, 242, 242);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inputsection img {
+  object-fit: contain;
+  width: 17px;
+}
+
+.checkboxcontainer {
+  color: rgb(243, 242, 242);
+  display: flex;
+}
+
+.checkboxcontainer input {
+  margin-right: 10px;
+}
+
+.loginbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  height: 80px;
+}
+
+.loginbutton button {
+  width: 3em;
+  height: 3em;
+  background-color: rgb(243, 242, 242);
+  border: none;
+  border-radius: 30px;
+  transition: 0.5s ease-out;
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(117, 117, 117);
+}
+
+.loginbutton button:hover {
+  width: 6em;
+  transition: 0.5s ease-out;
+  color: #9198e5;
+}
+
+.loginformfooter {
+  font-size: 14px;
+  text-align: center;
+}
+
+.loginformfooter p a {
+  color: rgb(243, 242, 242);
+  transition: 0.2s ease-in-out;
+}
+
+.loginformfooter p a:hover {
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+}
