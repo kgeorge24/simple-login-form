@@ -10,7 +10,7 @@
 npm install --save simple-login-form
 ```
 
-![simple-login-form](/src/assets/screenshot1.png)
+![simple-login-form](/src/assets/demonstration.png)
 
 ## Usage
 

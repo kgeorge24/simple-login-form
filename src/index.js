@@ -43,19 +43,21 @@ export class SimpleLoginForm extends Component {
               <img src={user} alt='' />
               <input
                 type='text'
-                placeholder='Username'
                 name='username'
                 onChange={(e) => this.saveInfoFromInput(e)}
+                required
               />
+              <span class={styles.floatinglabel}>Username</span>
             </div>
             <div className={styles.inputsection}>
               <img src={lock} alt='' />
               <input
                 type='password'
-                placeholder='Password'
                 name='password'
                 onChange={(e) => this.saveInfoFromInput(e)}
+                required
               />
+              <span class={styles.floatinglabel}>Password</span>
             </div>
             {/* <label className={styles.checkboxcontainer}>
               <input type='checkbox' />
@@ -66,7 +68,10 @@ export class SimpleLoginForm extends Component {
             </div>
             <div className={styles.loginformfooter}>
               <p>
-                <a href='/forgot-password'>Forgot Password?</a>
+                <a href='/sign-up'>Sign Up</a>
+              </p>
+              <p>
+                <a href='/forgot-password'>Forgot Password</a>
               </p>
             </div>
           </form>

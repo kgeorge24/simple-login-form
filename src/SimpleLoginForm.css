@@ -53,6 +53,7 @@ button:focus {
 }
 
 .inputsection {
+  position: relative;
   border-bottom: 2px solid rgb(243, 242, 242);
   display: flex;
   justify-content: center;
@@ -63,6 +64,23 @@ button:focus {
 .inputsection img {
   object-fit: contain;
   width: 17px;
+}
+
+input:focus ~ .floatinglabel,
+input:not(:focus):valid ~ .floatinglabel {
+  top: 1px;
+  left: 20px;
+  font-size: 10px;
+  opacity: 1;
+}
+
+.floatinglabel {
+  position: absolute;
+  left: 25px;
+  top: 16px;
+  color: white;
+  transition: 0.3s ease all;
+  pointer-events: none;
 }
 
 .checkboxcontainer {
@@ -97,7 +115,7 @@ button:focus {
 
 .loginbutton button:hover {
   width: 6em;
-  transition: 0.5s ease-out;
+  transition: 0.3s ease-out;
   color: #9198e5;
 }
 
@@ -107,6 +125,7 @@ button:focus {
 }
 
 .loginformfooter p a {
+  text-decoration: none;
   color: rgb(243, 242, 242);
   transition: 0.2s ease-in-out;
 }

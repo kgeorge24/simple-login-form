@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 // Example of importing an image for the photo icon.
-import picture from './glass.jpg'
+import picture from './seals.jpg'
 import { SimpleLoginForm } from 'simple-login-form'
 import 'simple-login-form/dist/index.css'
 
@@ -18,15 +18,23 @@ export default class App extends Component {
     borderRadius: '2%'
   }
 
+  containerStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '100vw',
+    height: '100vh'
+  }
+
   render() {
     return (
-      <React.Fragment>
+      <div style={this.containerStyle}>
         <SimpleLoginForm
           getUserInfo={this.sendUserInfoToDatabase}
           style={this.formStyle}
           photoIcon={picture}
         />
-      </React.Fragment>
+      </div>
     )
   }
 }
