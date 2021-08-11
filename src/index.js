@@ -4,7 +4,7 @@ import lock from './assets/lock.png'
 import user from './assets/user.png'
 import profilePhoto from './assets/seals.jpg'
 
-export class SimpleLoginForm extends Component {
+export default class SimpleLoginForm extends Component {
   state = {
     username: '',
     password: ''
