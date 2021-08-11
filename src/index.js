@@ -59,10 +59,6 @@ export default class SimpleLoginForm extends Component {
               />
               <span className={styles.floatinglabel}>Password</span>
             </div>
-            {/* <label className={styles.checkboxcontainer}>
-              <input type='checkbox' />
-              Remember Me
-            </label> */}
             <div className={styles.loginbutton}>
               <button>LOGIN</button>
             </div>
