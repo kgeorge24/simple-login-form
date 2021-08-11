@@ -47,7 +47,7 @@ export default class SimpleLoginForm extends Component {
                 onChange={(e) => this.saveInfoFromInput(e)}
                 required
               />
-              <span class={styles.floatinglabel}>Username</span>
+              <span className={styles.floatinglabel}>Username</span>
             </div>
             <div className={styles.inputsection}>
               <img src={lock} alt='' />
@@ -57,7 +57,7 @@ export default class SimpleLoginForm extends Component {
                 onChange={(e) => this.saveInfoFromInput(e)}
                 required
               />
-              <span class={styles.floatinglabel}>Password</span>
+              <span className={styles.floatinglabel}>Password</span>
             </div>
             {/* <label className={styles.checkboxcontainer}>
               <input type='checkbox' />
