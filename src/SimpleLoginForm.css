@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100;300;400;500;600;700;800;900&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 ::placeholder {
   color: rgb(243, 242, 242);
 }
@@ -12,8 +18,7 @@ button:focus {
 }
 
 .profilephoto {
-  padding-top: 15px;
-  height: 100px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +31,9 @@ button:focus {
   color: rgb(243, 242, 242);
   text-align: center;
   font-family: 'Big Shoulders Text', cursive;
+  margin-bottom: 12px;
 }
+
 .profilephoto img {
   border-radius: 50%;
   width: 90px;
@@ -39,6 +46,7 @@ button:focus {
   justify-content: center;
   width: 80%;
   margin: 0 auto;
+  padding: 10px;
 }
 
 .formcontainer form input[type='text'],
@@ -68,7 +76,7 @@ button:focus {
 
 input:focus ~ .floatinglabel,
 input:not(:focus):valid ~ .floatinglabel {
-  top: 1px;
+  top: -8px;
   left: 20px;
   font-size: 10px;
   opacity: 1;
@@ -77,10 +85,11 @@ input:not(:focus):valid ~ .floatinglabel {
 .floatinglabel {
   position: absolute;
   left: 25px;
-  top: 16px;
+  top: 6px;
   color: white;
   transition: 0.3s ease all;
   pointer-events: none;
+  /* border: 2px solid black; */
 }
 
 .checkboxcontainer {
@@ -122,6 +131,12 @@ input:not(:focus):valid ~ .floatinglabel {
 .loginformfooter {
   font-size: 14px;
   text-align: center;
+  height: 45px;
+  /* border: 2px solid black; */
+}
+
+.loginformfooter p {
+  margin-bottom: 10px;
 }
 
 .loginformfooter p a {
