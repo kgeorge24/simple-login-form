@@ -20,10 +20,8 @@ export default class SimpleLoginForm extends Component {
 
   loadImage = () => {
     if (this.props.photoIcon) {
-      console.log('showing custom image')
       return this.props.photoIcon
     } else {
-      console.log('showing default image')
       return profilePhoto
     }
   }
