@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import styles from './SimpleLoginForm.css'
-import lock from './assets/lock.png'
-import user from './assets/user.png'
+
+const lock = require('../src/assets/lock.png')
+// import lock from './assets/lock.png'
+const user = require('../src/assets/user.png')
+// import user from './assets/user.png'
 import profilePhoto from './assets/seals.jpg'
 
 export default class SimpleLoginForm extends Component {
@@ -20,10 +23,8 @@ export default class SimpleLoginForm extends Component {
 
   loadImage = () => {
     if (this.props.photoIcon) {
-      console.log('showing custom image')
       return this.props.photoIcon
     } else {
-      console.log('showing default image')
       return profilePhoto
     }
   }
